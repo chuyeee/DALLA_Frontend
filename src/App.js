@@ -21,7 +21,7 @@ function App() {
       <GlobalStyle />
         <div className="App">
           <nav>
-            <Link to="/">Home</Link> | <Link to="/menu">Menu</Link> | <Link to="/menudeatil">MenuDetail</Link> | <Link to="/count">Count</Link> | <Link to="/order">Order</Link>
+            <Link to="/">Home</Link> | <Link to="/menu">Menu</Link> | <Link to="/menudetail">MenuDetail</Link> | <Link to="/count">Count</Link> | <Link to="/order">Order</Link>
             | <Link to="/takeout">Takeout</Link> | <Link to="/pay">Pay</Link> | <Link to="/done">Done</Link>
           </nav>
           <Routes>

@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { IoMicCircleSharp } from 'react-icons/io5';
 import NextButton from "../components/NextButton";
 import ShowBox from "../components/ShowBox";
