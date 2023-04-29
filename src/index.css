@@ -10,10 +10,63 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFDC00;
+  height: calc(var(--vh, 1vh) * 100);
   
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.comment {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.buttoncenter {
+  position: fixed;
+  bottom: 7rem;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.showcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.delete {
+  padding: 2px 12px;
+  border-radius: 8px;
+  border: 1px solid #921b1d;
+  color: white;
+  background: #921b1d;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.IC {
+  min-width: 10px;
+  padding: 2px 12px;
+  border-radius: 12px;
+  border: 1px solid #2a621d;
+  color: white;
+  background: #2a621d;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 20px;
 }

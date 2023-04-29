@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Pre = styled.button`
-  min-width: 150px;
+const OB = styled.button`
+  min-width: 120px;
+  min-height: 120px;
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 1.5rem;
@@ -12,9 +13,14 @@ const Pre = styled.button`
   background: white;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 `;
 
-function PreButton({ children }) {
-  return <Pre>{children}</Pre>;
+function OrderBox({ children }) {
+  return <OB>{children}</OB>;
 }
-export default PreButton;
+export default OrderBox;

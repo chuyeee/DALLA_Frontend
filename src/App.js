@@ -1,5 +1,5 @@
 import React from "react";
-//import {useEffect} from 'react';
+import {useEffect} from 'react';
 import {Routes, Route, Link} from "react-router-dom";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
@@ -16,13 +16,21 @@ import Input from "./pages/Input"
 import Input2 from "./pages/Input2"
 
 function App() {
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
+
   return (
     <>
       <GlobalStyle />
         <div className="App">
           <nav>
-            <Link to="/">Home</Link> | <Link to="/menu">Menu</Link> | <Link to="/menudetail">MenuDetail</Link> | <Link to="/count">Count</Link> | <Link to="/order">Order</Link>
-            | <Link to="/takeout">Takeout</Link> | <Link to="/pay">Pay</Link> | <Link to="/done">Done</Link>
+            {/*<Link to="/">Home</Link> | <Link to="/menu">Menu</Link> | <Link to="/menudetail">MenuDetail</Link> | <Link to="/count">Count</Link> | <Link to="/order">Order</Link>
+            | <Link to="/takeout">Takeout</Link> | <Link to="/pay">Pay</Link> | <Link to="/done">Done</Link>*/}
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />

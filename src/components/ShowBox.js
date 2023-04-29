@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Show = styled.button`
+  min-width: 120px;
+  min-height: 120px;
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 1.5rem;

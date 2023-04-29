@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Next = styled.button`
+  min-width: 150px;
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 1.5rem;
